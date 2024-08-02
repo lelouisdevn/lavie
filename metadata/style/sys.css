@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.sq-bdr {
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.sq-bdr .sq-lg {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.logo {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0 0 20px;
+    /* text-align: center; */
+    /* position: relative; */
+}
+.logo img {
+    width: 75px;
+    border-radius: 50%;
+    /* position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%); */
+}
+.page .pg-rt {
+    width: 70%;
+    float: right;
+    height: 100%;
+}
+.sq-fm-form {
+    text-align: center;
+    /* margin: 7px 7px!important; */
+}
+.sq-fm-form input{
+    border: 1px solid grey;
+    border-radius: 15px 15px 0 0;
+    padding: 10px 7px;
+    height: 55px;
+    line-height: 50px;
+    box-sizing: border-box;
+    width: 70%;
+    font-size: 18px;
+}
+/* .sq-fm-form input:hover {
+    border-radius: 15px 15px 0 0;
+} */
+.sq-fm-form:nth-child(2) input {
+    border-radius: 0 0 15px 15px;
+}
+
+.sq-grid {
+    display: grid;
+    grid-template-columns: 20% auto;
+    height: 100%;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 7px grey;
+    border-radius: 10px;
+}
+.sq-grid-it {
+    padding: 10px;
+}
+.sq-grid-it-container {
+    text-align: center;
+    /* margin: auto auto; */
+    width: 100%;
+    height: 100%;
+}
+.sq-grid-it-container .sq-fm-til {
+    margin: 15px 7px;
+}
+.sq-grid-it-container .sq-fm-ctn {
+    /* margin: auto!important; */
+    
+}
+
+.sq-grid-it-container div {
+    /* margin: 5px; */
+    font-size: 18px;
+}
+
+.sq-grid-it-container button {
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: solid 1px grey;
+}
+
+.sq-grid-it-container .sq-fm-til {
+    /* font-size: 40px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace; */
+}
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px!important;
+}
+.poppins-small {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px!important;
+}
+.sq-fm-ftr {
+    margin: 10px;
+}
