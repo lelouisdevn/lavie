@@ -70,7 +70,7 @@ const mystery_of_love_content = `<div class="sq-grid grid-three">
                     </div>`
 var button = `
    <button id="slider-button" onClick="next()">Want to see more?</button>
-`          
+`
 var title = `
 <div class="sq-grid grid-three">
                         <div class="sq-grid-it expand-1 title poppins-medium">
@@ -128,7 +128,7 @@ function change_to_profile1() {
     })
     // $('#content-body').html(mystery_of_love_content);
     // setInterval(() => {
-    
+
 }
 var em;
 const messages = [
@@ -137,10 +137,10 @@ const messages = [
     'Do you remember how we met',
     'On Tinder, we first chatted on Sunday, 14th of July, 2024',
     'It is a controversial dating app, but you should know that',
-   'somewhere lies a person who is truly aching for love!',
-   'and I am longing for you!',
-   'Are you interested in seeing more about me?',
-   'or wondering about how far we could go together?',
+    'somewhere lies a person who is truly aching for love!',
+    'and I am longing for you!',
+    'Are you interested in seeing more about me?',
+    'or wondering about how far we could go together?',
     'Baby, I think you should press next now!'
 ]
 function display_love_messages() {
@@ -230,7 +230,7 @@ function jump_to_concerns() {
 }
 function jump_to_gallery() {
     $('#content-body').html(gallery);
-    $('#right-arrow').on('click', function() {
+    $('#right-arrow').on('click', function () {
         if (img_pos >= images.length) jump_to_concerns();
         $('#gallery').attr('src', '');
         $('#gallery').attr('src', images[img_pos].url);
@@ -276,24 +276,36 @@ var gift = `
 </div>
 `
 
-function receive_gift () {
+function receive_gift() {
     $('#content-body').html(gift);
     $('.sq-bdr').addClass('bigger-container');
 }
 var img_pos = 1;
 var images = [
-    { title: 'This Baby Shark I gave you on the first day we met' +
-        '</br>I miss him so much. Does he miss me too?', url: 'metadata/resources/images/babyshark.jpg' },
-    { title: 'Custard you bought for me when you travelled to Vung Tau '+
-        '<br/> it was very delicious!', url: 'metadata/resources/images/bonglan.jpg' },
-    { title: 'And I ate this when I was watching TV shows' +
-        '<br/> Which made the show more interesting', url: 'metadata/resources/images/custard2.jpg' },
-    { title: 'We play Arena of Valor together for many days.<br>' +
-        'I often do not play well. So we always need a strong team to cover us =))', url: 'metadata/resources/images/lq.jpg' },
-    { title: 'I took a picture of you when you stopped by to buy medicins' +
-        'You are just too carelessly cute', url: 'metadata/resources/images/baby.jpg' },
-    { title: 'I took this picture when I arrived to pick you up <br>' +
-        'On the first day we went on a date, with so much hope and enthusiasm', url: 'metadata/resources/images/pagoda.jpg' },
+    {
+        title: 'This Baby Shark I gave you on the first day we met' +
+            '</br>I miss him so much. Does he miss me too?', url: 'metadata/resources/images/babyshark.jpg'
+    },
+    {
+        title: 'Custard you bought for me when you travelled to Vung Tau ' +
+            '<br/> it was very delicious!', url: 'metadata/resources/images/bonglan.jpg'
+    },
+    {
+        title: 'And I ate this when I was watching TV shows' +
+            '<br/> Which made the show more interesting', url: 'metadata/resources/images/custard2.jpg'
+    },
+    {
+        title: 'We play Arena of Valor together for many days.<br>' +
+            'I often do not play well. So we always need a strong team to cover us =))', url: 'metadata/resources/images/lq.jpg'
+    },
+    {
+        title: 'I took a picture of you when you stopped by to buy medicins.<br/>' +
+            'You are just too carelessly cute', url: 'metadata/resources/images/baby.jpg'
+    },
+    {
+        title: 'I took this picture when I arrived to pick you up <br>' +
+            'On the first day we went on a date, with so much hope and enthusiasm', url: 'metadata/resources/images/pagoda.jpg'
+    },
 ]
 
 // jump_to_concerns();

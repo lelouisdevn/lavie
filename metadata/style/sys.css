@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 .page {
     width: 100%;
     height: 100vh;
@@ -20,6 +21,7 @@
     transform: translate(-50%, -50%);
     padding: 10px;
 }
+
 .sq-bdr .sq-lg {
     background-color: antiquewhite;
     width: 100%;
@@ -32,7 +34,8 @@
     content: "";
     display: table;
     clear: both;
-  }
+}
+
 .logo {
     float: left;
     width: 100%;
@@ -41,6 +44,7 @@
     /* text-align: center; */
     /* position: relative; */
 }
+
 .logo img {
     width: 75px;
     border-radius: 50%;
@@ -49,16 +53,19 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%); */
 }
+
 .page .pg-rt {
     width: 70%;
     float: right;
     height: 100%;
 }
+
 .sq-fm-form {
     text-align: center;
     /* margin: 7px 7px!important; */
 }
-.sq-fm-form input{
+
+.sq-fm-form input {
     border: 1px solid grey;
     border-radius: 15px 15px 0 0;
     padding: 10px 7px;
@@ -68,6 +75,7 @@
     width: 70%;
     font-size: 18px;
 }
+
 /* .sq-fm-form input:hover {
     border-radius: 15px 15px 0 0;
 } */
@@ -83,21 +91,25 @@
     box-shadow: 1px 1px 7px grey;
     border-radius: 10px;
 }
+
 .sq-grid-it {
     padding: 10px;
 }
+
 .sq-grid-it-container {
     text-align: center;
     /* margin: auto auto; */
     width: 100%;
     height: 100%;
 }
+
 .sq-grid-it-container .sq-fm-til {
     margin: 15px 7px;
 }
+
 .sq-grid-it-container .sq-fm-ctn {
     /* margin: auto!important; */
-    
+
 }
 
 .sq-grid-it-container div {
@@ -117,34 +129,39 @@
     text-align: left;
     font-family: 'Courier New', Courier, monospace; */
 }
+
 .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 40px!important;
+    font-size: 40px !important;
 }
+
 .poppins-small {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 15px!important;
+    font-size: 15px !important;
 }
+
 .sq-fm-ftr {
     margin: 10px;
 }
 
 .grid-three {
-    grid-template-columns: auto 10% auto!important;
-    box-shadow: none!important;
+    grid-template-columns: auto 10% auto !important;
+    box-shadow: none !important;
     font-family: "Poppins", sans-serif;
     text-align: center;
     /* background-image: url('../resources/images/heartbeat.jpg'); */
 }
+
 .expand-1 {
     grid-column: 1 / span 3;
     text-align: center;
     margin: auto;
 }
+
 .grid-three img {
     border-radius: 50%;
     width: 200px;
@@ -152,7 +169,7 @@
 
 .fa-heart {
     color: rgb(228, 8, 8);
-    font-size: 50px!important;
+    font-size: 50px !important;
     /* animation: heartbeat 5s ease-in-out infinite; */
     position: absolute;
     left: 50%;
@@ -160,6 +177,7 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 }
+
 .fa-heart-beat {
     position: absolute;
     top: 50%;
@@ -176,11 +194,13 @@
     /* width: 100px; */
     text-align: center;
 }
+
 .title {
     font-size: 70px;
     color: red;
     grid-row: 1 / span 2;
 }
+
 audio {
     position: absolute;
     bottom: 0;
@@ -215,11 +235,13 @@ audio {
     object-fit: cover;
     grid-template-columns: 20% 60% 20% !important;
 }
+
 .grid-nine .sq-grid-it {
     /* width: 100%; */
     text-align: center;
     margin: auto;
 }
+
 .grid-nine img {
     border: solid 1px grey;
     box-shadow: 1px 1px 6px lightgrey;
@@ -228,14 +250,17 @@ audio {
     /* height: 100%; */
     /* object-fit: cover; */
 }
+
 /* .grid-three img {
     width: 45%;
     border-radius: 10px;
     border: solid 1px lightgrey;
 } */
-.fa-arrow-right, .fa-arrow-left {
-    font-size: 40px!important;
+.fa-arrow-right,
+.fa-arrow-left {
+    font-size: 40px !important;
 }
+
 .invisible {
     opacity: 0;
 }
