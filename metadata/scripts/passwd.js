@@ -55,7 +55,7 @@ const mystery_of_love_content = `<div class="sq-grid grid-three">
                         <div class="sq-grid-it expand-1 poppins-medium">The Mystery of Love</div>
                         <div class="sq-grid-it">
                             <img src="metadata/resources/images/em2.jpg" alt="">
-                            <div>Ha Trung Tin</div>
+                            <div>Ha Trung Tin <br/> 07/03/2001</div>
                         </div>
                         <div class="sq-grid-it" style="margin: auto 0; position: relative;">
                             <!-- <img src="../resources/images/heartbeat.jpg" alt=""> -->
@@ -63,7 +63,7 @@ const mystery_of_love_content = `<div class="sq-grid grid-three">
                         </div>
                         <div class="sq-grid-it">
                             <img src="metadata/resources/images/anh.jpg" alt="">
-                            <div>Ngo Tran Vinh Thai</div>
+                            <div>Ngo Tran Vinh Thai <br/> 06/03/2001</div>
                         </div>
                         <div class="sq-grid-it expand-1" id="slider" onclick="display_love_messages()">
                             Unveiling the truth...
