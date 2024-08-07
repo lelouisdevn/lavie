@@ -149,6 +149,7 @@
 }
 
 .grid-three {
+    position: relative;
     grid-template-columns: auto 10% auto !important;
     box-shadow: none !important;
     font-family: "Poppins", sans-serif;

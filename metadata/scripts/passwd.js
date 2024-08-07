@@ -13,12 +13,16 @@ class User {
             : false;
     }
     log_in_with_email() {
+        clear_fields_on_submitted();
         if (this.check_user_authorised()) {
-            console.log("OK");
-            clear_fields_on_submitted();
             setTimeout(() => {
                 change_to_profile1();
             }, 1500);
+        } else {
+            $('#next-btn').html('Wrong username or password');
+            setTimeout(() => {
+                $('#next-btn').html('Sign in');
+            }, 2000);
         }
     }
 }
@@ -264,21 +268,40 @@ function handleAns() {
 
 var gift = `
 <div class="sq-grid grid-three">
-<div class="sq-grid-it expand-1 poppins-medium">Your Gift</div>
-<div class="sq-grid-it expand-1">
-                            <img src="metadata/resources/images/gift.jpg" alt="" style="border-radius: 20px; width: 45%;">
+                        <div class="sq-grid-it expand-1 poppins-medium">Your Gift</div>
+                        <div style="position: absolute; margin: 10px; right: 0">
+                            <i class="fa fa-close poppins-medium" style="font-size: 30px!important;"></i>
                         </div>
                         <div class="sq-grid-it expand-1">
-                            Congratulations, you just won a voucher to drink milk tea from Ngo Gia =))
-                            <br>
-                            Contact your boyfriend next time you met him and say you love him to receive it
+                                                    <img src="metadata/resources/images/gift.jpg" alt="" style="border-radius: 20px; width: 45%;">
+                                                </div>
+                                                <div class="sq-grid-it expand-1">
+                                                    Congratulations, you just won a voucher to drink milk tea from Ngo Gia =))
+                                                    <br>
+                                                    Contact your boyfriend next time you meet him and say you love him to receive it
+                                                </div>
                         </div>
-</div>
+`
+
+var ending = `
+<div class="sq-grid grid-three">
+                        <div class="sq-grid-it expand-1 poppins-medium">
+                        Tang em 1 bong hoa
+                        </div>
+                        <div class="sq-grid-it expand-1">
+                            <img src="metadata/resources/images/cat_giving_flower.jpg" alt=""
+                                style="border: none; border-radius: 20px; width: 50%;"
+                            >
+                        </div>
+                        
+                    </div>
 `
 
 function receive_gift() {
-    $('#content-body').html(gift);
-    $('.sq-bdr').addClass('bigger-container');
+    show_gift_view();
+    $('.fa-close').on('click', () => {
+        $('#content-body').html('')
+    })
 }
 var img_pos = 1;
 var images = [
@@ -292,14 +315,14 @@ var images = [
     },
     {
         title: 'And I ate this when I was watching TV shows' +
-            '<br/> Which made the show more interesting', url: 'metadata/resources/images/custard2.jpg'
+            '<br/> Which made the shows more interesting', url: 'metadata/resources/images/custard2.jpg'
     },
     {
         title: 'We play Arena of Valor together for many days.<br>' +
             'I often do not play well. So we always need a strong team to cover us =))', url: 'metadata/resources/images/lq.jpg'
     },
     {
-        title: 'I took a picture of you when you stopped by to buy medicins.<br/>' +
+        title: 'I took a picture of you when you stopped by to buy medicines.<br/>' +
             'You are just too carelessly cute', url: 'metadata/resources/images/baby.jpg'
     },
     {
@@ -309,3 +332,20 @@ var images = [
 ]
 
 // jump_to_concerns();
+
+function show_gift_view() {
+    $('.sq-bdr').addClass('bigger-container')
+    $('#content-body').html(gift);
+    $('.fa-close').on('click', () => {
+        show_ending()
+    })
+    $('#')
+}
+// show_gift_view()
+
+function show_ending () {
+    $('.sq-bdr').removeClass('bigger-container');
+    $('#content-body').html(ending)
+}
+
+// show_ending()
